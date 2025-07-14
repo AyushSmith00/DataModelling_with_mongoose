@@ -2,16 +2,16 @@ import mongoose from "mongoose";
 
 const userData = new mongoose.Schema(
     {
-    username: {
+   
+    gmail: {
+        type: String,
+        required: true,
+        unique: true, username: {
         type: String,
         required: true,
         unique: true,
         lowercase: [true, "You hvae to write your username in lower case"]
     },
-    gmail: {
-        type: String,
-        required: true,
-        unique: true,
         lowercase: [true,"You have to write your gmail in lower case"]
     },
     password: {
